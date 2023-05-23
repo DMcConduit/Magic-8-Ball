@@ -1,0 +1,106 @@
+body {
+  color: #31087B;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  background-color: #FA2FB5;
+}
+
+#ask-button{
+  background-color: #FFC23C;
+  border-radius: 10px;
+  color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 500px;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  
+  /*
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  */
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #31087B;
+
+}
+
+img{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  z-index: 10;
+  width: 35%;
+  margin-top: 15px;
+  /*left: 200px;
+  margin-right: 600px;
+  margin-left: 230px;*/
+
+  transform: translate(-50%, -50%);
+}
+
+h1{
+  font-family: 'Monoton', cursive;
+  font-size: 45px;
+  margin-bottom: 2px;
+  word-spacing: 20px;
+  color: #FFC23C;
+}
+
+h1:hover {
+  color: #31087B;
+}
+
+p {
+  position: absolute;
+  transform: translate(-50%);
+  left: 50%;
+  z-index: 30;
+  padding-bottom: 15px;
+
+}
+
+#response-display {
+  font-size: 20px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  z-index: 20;
+
+}
+
+
+/* stars */
+
+#bottom-star{
+  position: relative;
+  bottom: -100px;
+  right: 80px;
+  width: 10%;
+}
+
+#mid-star {
+  position: absolute;
+  top: 100px;
+  left: 210px;
+  width: 10%;
+}
+
+#top-star {
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  width: 10%;
+}
+
+.star-container{
+  position: relative;
+}
