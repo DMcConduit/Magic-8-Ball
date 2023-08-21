@@ -27,5 +27,20 @@ var responses = [
 
 function newResponses(){
   var randomNumber = Math.floor(Math.random() * (responses.length));
-  document.getElementById('response-display').innerHTML = responses[randomNumber];
+
+  let x = document.forms["form_question"]["question"].value;
+    if (x === ""){
+      alert("Please type a question to receive an answer.");
+        return false;
+
+    } else{
+      document.getElementById('response-display').innerHTML = responses[randomNumber];
+
+    }  
+
+  var form_question = document.getElementById('form_question');
+  form_question.reset()
+
+  
+  
 }

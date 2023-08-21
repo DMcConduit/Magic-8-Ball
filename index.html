@@ -6,21 +6,23 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Monoton&family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Monoton&family=Oleo+Script+Swash+Caps&family=Bricolage+Grotesque:opsz@10..48&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <h1>Magic 8-Ball</h1>
-    <p>Seeking advice? Ask the Magic 8-Ball to get your answer!</p>
 
-    <div class="star-container">
-      <img src="images/stars.png" alt="stars" id="top-star">
-      <img src="images/stars.png" alt="stars" id="mid-star">
+    <div class="container">
+      <h1>Magic 8-Ball</h1>
+      <h2>Seeking advice? Ask the Magic 8-Ball to get your answer!</h2>
+      <form id="form_question">
+        <input type="text" placeholder="Type your question...." id="question" required>
+        <button id="ask-button" type="button" name="submit" onclick="newResponses()" value="Reset">ASK ME!</button>
 
+      </form>
+      
     </div>
-
-
-
-
+    
+    
 
     <div class= "eight-ball">
       <p id="response-display" class="response">
@@ -28,21 +30,8 @@
       </p>
 
       <img src="images/magic-ball.png" alt="magic ball" id="magic-ball">
+    </div>  
 
-
-
-    </div>
-
-      <img src="images/stars.png" alt="stars" id="bottom-star">
-      
-
-
-
-    <div class="button">
-      <button id="ask-button" type="button" name="button" onclick="newResponses()">Ask Me!</button>
-
-
-    </div>
 
 
 
